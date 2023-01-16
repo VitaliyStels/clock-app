@@ -1,0 +1,16 @@
+{
+  "name": "clock-app",
+  "version": "0.0.1",
+  "description": "desktop aesthetic clock app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-mac": "electron-builder --mac"
+  },
+  "author": "Vi Min",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  }
+}
