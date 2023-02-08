@@ -1,31 +1,21 @@
-const {app, BrowserWindow, Menu } = require('electron')
+const { app, BrowserWindow } = require('electron')
 
 const createWindow = () => {
     const dayWidget = new BrowserWindow({
         width: 295,
         height: 130,
 				transparent:true,
-				frame:true,
+				frame:false,
 				icon: __dirname + 'build/icon.png'
     })
     dayWidget.loadFile('./src/day-widget.html')
 }
 
-const createMenuWindow = () => {
-	const menuWindow = new BrowserWindow({
-		width: 400,
-		height: 500,
-		transparent: false,
-		frame: true
-	})
-	menuWindow.loadFile('./src/menu-window.html')
-}
 
 app.whenReady().then(() => {
     createWindow()
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) createWindow()
-				else if (BrowserWindow.getAllWindows().length === 1) createMenuWindow()
     })
 
 	// CMD + Q working
