@@ -9,3 +9,5 @@ run in project directory
 npm install
 npm start
 ```
+# USING
+On Mac OS reccomended using Rectangle app for moving widget across monitors
