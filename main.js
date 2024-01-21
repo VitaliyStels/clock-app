@@ -2,8 +2,8 @@ const { app, BrowserWindow } = require('electron')
 
 const createWindow = () => {
     const dayWidget = new BrowserWindow({
-        width: 295,
-        height: 130,
+        width: 300,
+        height: 290,
 				transparent:true,
 				frame:false,
 				icon: __dirname + 'build/icon.png'

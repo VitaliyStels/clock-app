@@ -1,23 +1,9 @@
 body {
-    display: block;
-		font-family: 'Orbitron', sans-serif;
-    text-align: center;
-		user-select: none;
-		color: white;
+	font-family: 'Hyperwave', sans-serif;
+	user-select: none;
+	color: white;
 }
 
-#dayField {
-    padding: 0;
-    margin: 0 auto; 
-    font-size: 43px;
-}
-
-#timeField {
-	padding: 0;
-	margin: 0 auto;
-	font-size: 23px;
-}
-
-.switchColorBeige {
-	color: beige;
+.tasks {
+	padding-left: 3vw;
 }
